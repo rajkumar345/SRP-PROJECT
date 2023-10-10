@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Navbar */
+        #Navbar {
+            display: flex;
+            background-color: teal;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+        }
+
+        #logo {
+            font-size: 24px;
+            color: white;
+        }
+
+        #list {
+            display: flex;
+            font-size: 18px;
+            color: white;
+        }
+
+        #list a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+        }
+
+        /* Container */
+        .container {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container h1 {
+            color: rgb(139, 23, 0);
+            font-family: Elephant, sans-serif;
+            font-size: 36px;
+        }
+
+        .container p {
+            color: #333;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            line-height: 1.5;
+            margin-top: 20px;
+        }
+
+        /* Contact Form */
+        #contact {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .contact-info {
+            text-align: left;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        .contact-form {
+            text-align: left;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: teal;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            background-color: teal;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="Navbar">
+        <div id="logo">WOMEN LEARNING CENTER</div>
+        <div id="list">
+            <a href="WOMEN LEARNING CENTER home.html">Home</a>
+        </div>
+        <div id="list">
+            <a href="WOMEN LEARNING CENTER career guidance.html"> Career Guidance</a>
+        </div>
+        <div id="list">
+            <a href="WOMEN LEARNING CENTER jobs.html"> Career Guidance</a>
+        </div>
+        <div id="list">
+            <a href="WOMEN LEARNING CENTER books.html">Books</a>
+        </div>
+        <div id="list">
+            <a href="WOMEN LEARNING CENTER video lectures.html">Video Lectures</a>
+        </div>
+        <div id="list">
+            <a href="WOMEN LEARNING CENTER online courses.html">Online Courses</a>
+        </div>
+        <div id="list">
+            <a href="WOMEN LEARNING CENTER about us.html">About Us</a>
+        </div>
+        <div id="list">
+            <a href="WOMEN LEARNING CENTER contact us.html">Contact Us</a>
+        </div>
+        </div>
+    </div>
+    <div id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need assistance, please feel free to get in touch with us.</p>
+        
+        <div class="contact-info">
+            <h3>Address</h3>
+            <label for="Address">Address:</label>
+            <input type="text" id="Address" Address="Address" required>
+        
+            
+            <label for="Email">Email:</label>
+            <input type="text" id="Email" Email="Email" required>
+        
+            
+            <label for="Phone">Phone:</label>
+            <input type="text" id="Phone" Phone="Phone" required>
+        </div>
+        
+        <div class="contact-form">
+                       
+            <h3>Contact Form</h3>
+            <form action="submit_contact_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+        
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <footer>&copy; 2023 EMPOWERING WOMEN THROUGH AN ONLINE PLATFORM</footer>
+</form>         

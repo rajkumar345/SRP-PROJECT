@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Women Empowerment Platform</title>
+    <link rel="stylesheet" href="C:\Users\admin\Desktop\srp project\empowering women through an online platform(css).css">
+    <script src="C:\Users\admin\Desktop\srp project\empowering women through an online platform(javascript).js"></script>    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="C:\Users\admin\Downloads\Colorful Empowered Women Empower Women Desktop Wallpaper" alt="Logo">
+                <h1>The Women Empowerment Platform</h1>
+            </div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <h1>Empowering Women for a Brighter Future</h1>
+            <p>Welcome to a community dedicated to supporting and uplifting women in every aspect of life.</p>
+            <a href="#join" class="cta-button">Join Us</a>
+        </div>
+    </section>
+
+    <section id="about" class="gray-bg">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Our mission is to empower women through education, mentorship, and opportunities for growth.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-card">
+                <h3>Online Workshops</h3>
+                <p>Participate in interactive workshops on various topics.</p>
+            </div>
+            <div class="service-card">
+                <h3>Mentorship Programs</h3>
+                <p>Connect with experienced mentors who can guide you.</p>
+            </div>
+            <div class="service-card">
+                <h3>Career Opportunities</h3>
+                <p>Explore job openings and career development resources.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="gray-bg">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have questions or feedback, feel free to reach out.</p>
+            <a href="mailto:contact@womenempowerment.com" class="cta-button">Contact Us</a>
+        </div>
+    </section>
+    <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+    
+        <button type="submit">Submit</button>
+    </form>    
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 The Women Empowerment Platform</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const links = document.querySelectorAll("nav a");
+
+            for (const link of links) {
+                link.addEventListener("click", smoothScroll);
+            }
+
+            function smoothScroll(event) {
+                event.preventDefault();
+                const targetId = event.target.getAttribute("href").substring(1);
+                const targetElement = document.getElementById(targetId);
+                const offset = 80; // Adjust as needed for your header height
+
+                window.scrollTo({
+                    top: targetElement.offsetTop - offset,
+                    behavior: "smooth",
+                });
+            }
+
+            // Add code here to handle the contact form submission if needed
+            // For example, you can use an AJAX request to send the form data to a server.
+        });
+    </script>
+</body>
+</html>

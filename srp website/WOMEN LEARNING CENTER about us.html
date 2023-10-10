@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOMEN LEARNING CENTER</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar */
+        #Navbar {
+            display: flex;
+            background-color: teal;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+        }
+
+        #logo {
+            font-size: 24px;
+            color: white;
+        }
+
+        #list {
+            display: flex;
+            font-size: 18px;
+            color: white;
+        }
+
+        #list a {
+            text-decoration: none; /* Remove underline from links */
+            color: white;
+            margin: 0 15px;
+        }
+
+        /* Container */
+        .container {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container h1 {
+            color: rgb(139, 23, 0);
+            font-family: Elephant, sans-serif;
+            font-size: 36px;
+        }
+
+        .container p {
+            color: #333;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            line-height: 1.5;
+            margin-top: 20px;
+        }
+
+        /* Contact Form */
+        #contact {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .contact-info {
+            text-align: left;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        .contact-form {
+            text-align: left;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: teal;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            background-color: teal;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="Navbar">
+        <div id="logo">WOMEN LEARNING CENTER</div>
+        <div id="list">
+            <a href="WOMEN LEARNING CENTER home.html">
+                <div>Home</div>
+            </a>
+            <a href="WOMEN LEARNING CENTER career guidance.html">
+                <div>Career Guidance</div>
+            </a>
+            <a href="WOMEN LEARNING CENTER jobs.html">
+                <div>Career Guidance</div>
+            </a>
+            <a href="WOMEN LEARNING CENTER books.html">
+                <div>Books</div>
+            </a>
+            <a href="WOMEN LEARNING CENTER video lectures.html">
+                <div>Video Lectures</div>
+            </a>
+            <a href="WOMEN LEARNING CENTER online courses.html">
+                <div>Online Courses</div>
+            </a>
+            <a href="WOMEN LEARNING CENTER about us.html">
+                <div>About Us</div>
+            </a>
+            <a href="WOMEN LEARNING CENTER contact us.html">
+                <div>Contact Us</div>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+       <img src="data:image/jpeg;base64,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" 
+        alt="Project Image" width="50%" height="50%">
+        <h1 style="color:rgb(139, 23, 0);font-family:Elephant;font-size:150%; ">EMPOWERING WOMEN THROUGH AN ONLINE PLATFORM</h1>
+        <strong><span style="color:orange;font-family:freestyle script;font-size:400%;">Be The Reason</span><br><span
+                style="color:skyblue;font-family:freestyle script;font-size:400%;"> Someone Smile Today!</span></strong>
+        <strong>
+            <p style="color:rgb(222, 145, 14);font-family:Bahnschrift SemiBold SemiConden;">
+                At WOMEN LEARNING CENTER, we are committed to empowering women through 
+                the use of technology and the limitless opportunities offered by the digital world. 
+                Our online platform serves as a catalyst for change, enabling women from all walks of life to build their confidence, 
+                acquire new skills, and connect with a supportive community. 
+                We believe that when women are empowered, they can not only transform their own lives but also contribute
+                 significantly to the betterment of society as a whole.</p>
+        </strong>
+        <strong>
+            <p style="color:rgb(12, 98, 203);font-family:Bahnschrift SemiBold SemiConden;">
+                Our initiative aims to empower and uplift women through education and skill-building opportunities, and we 
+                have chosen the digital realm to expand our reach and impact. This website serves as a gateway to a world of knowledge, 
+                providing a safe and inclusive space for women from all walks of life to learn, grow, and thrive.
+            </p>
+        </strong>
+        <strong>
+            <p style="color:rgb(141, 42, 159);font-family:Bahnschrift SemiBold SemiConden;">
+                At WOMEN LEARNING CENTER, we firmly believe that education is the key to unlocking untapped potential and breaking
+                down barriers. Our online platform offers a diverse range of courses and resources, tailored to the unique needs 
+                and interests of women. Whether you are seeking to enhance your professional skills, explore new hobbies, or gain 
+                valuable life skills, we have something for you.
+            </p>
+        </strong>
+        <strong>
+            <p style="color:rgb(63, 222, 14);font-family:Bahnschrift SemiBold SemiConden;">
+            Through a user-friendly interface, you can access interactive video lessons, engaging tutorials, and informative articles 
+            created and curated by experts in various fields. We understand that each woman's journey is different, so our content caters 
+            to various learning styles and levels of expertise. Whether you are a beginner or a seasoned learner, our courses are designed to 
+            accommodate and support your growth.
+            </p>
+        </strong>
+        <strong>
+            <p style="color:rgb(38, 148, 244);font-family:Bahnschrift SemiBold SemiConden;">
+                Our mission is to bridge the gender gap by providing women with the tools, knowledge, 
+                and resources they need to thrive in the digital age. We are dedicated to fostering an inclusive and 
+                empowering environment where women can realize their full potential and become leaders in their chosen fields.
+            </p>
+        </strong>
+    </div>
+    <footer>&copy; 2023 WOMEN LEARNING CENTER</footer>
+</body>
+
+</html>

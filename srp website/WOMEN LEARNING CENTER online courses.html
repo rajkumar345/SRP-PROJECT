@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WOMEN LEARNING CENTER</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Navbar */
+        #Navbar {
+            display: flex;
+            background-color: teal;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+        }
+
+        #logo {
+            font-size: 24px;
+            color: white;
+        }
+
+        #list {
+            display: flex;
+            font-size: 18px;
+            color: white;
+        }
+
+        #list a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+        }
+
+        /* Container */
+        .container {
+            flex: 1;
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container h1 {
+            color: rgb(139, 23, 0);
+            font-family: Elephant, sans-serif;
+            font-size: 36px;
+        }
+
+        .container p {
+            color: #333;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            line-height: 1.5;
+            margin-top: 20px;
+        }
+
+        /* Jobs Section Styles */
+        .jobs-section {
+            margin-top: 40px;
+        }
+
+        .jobs-section h2 {
+            color: rgb(233, 9, 125);
+            font-family: Bahnschrift SemiBold SemiConden;
+            font-size: 24px;
+        }
+
+        .jobs-section p {
+            color: #333;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            line-height: 1.5;
+            margin-top: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: teal;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="Navbar">
+        <div id="logo">WOMEN LEARNING CENTER</div>
+        <div id="list">
+            <a href="WOMEN LEARNING CENTER home.html">Home</a>
+            <a href="WOMEN LEARNING CENTER career guidance.html">Career Guidance</a>
+            <a href="WOMEN LEARNING CENTER jobs.html">Jobs</a>
+            <a href="WOMEN LEARNING CENTER books.html">Books</a>
+            <a href="WOMEN LEARNING CENTER video lectures.html">Video Lectures</a>
+            <a href="WOMEN LEARNING CENTER online courses.html">Online Courses</a>
+            <a href="WOMEN LEARNING CENTER about us.html">About Us</a>
+            <a href="WOMEN LEARNING CENTER contact us.html">Contact Us</a>
+        </div>
+    </div>
+    <div class="container">
+    <!-- Replace this image URL with your project's image -->
+    <img src="data:image/jpeg;base64,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" 
+    alt="Project Image" width="50%" height="50%">
+    <h1>Welcome to WOMEN LEARNING CENTER online!</h1>
+    <h2>Online Courses</h2>
+    
+    <p>Explore our online courses tailored to empower women:</p>
+   
+    <div>
+    <ul>
+       
+            <h1>Course 1:</h1>
+            <h2>Empowering Women in Business</h2>
+            <p>Enhance your leadership skills and break through the glass ceiling with this course.</p>
+            <h4>TOPIC-1:</h4>    
+            <strong>Course:</strong>"Empowering Women in Business" 
+            <p><strong>Provider: </strong> University of California, Berkeley</p>
+            <p><strong>Description: </strong>This course focuses on leadership development and gender diversity in the workplace.</p>
+            <p><strong>Link:</strong>edX - Empowering Women in Business</p>
+            <p><strong>get detailed information about the specific courses and resources available on the website, you should 
+                visit the URL you provided:<a href= "https://www.edx.org/search?tab=course">https://www.edx.org/search?tab=course</a> There, you can explore the content and offerings in more detail.</p></p></strong>
+            <p><strong>To start a course click here &#128071; to explore more courses</strong></p>
+            <a href="https://www.edx.org/search?tab=course">Learn More</a>
+       
+            <h4>TOPIC-2:</h4> 
+            <strong>Course:</strong>"Empowering Women in Business" 
+            <p><strong>Provider: </strong> University of California, Berkeley</p>
+            <p><strong>Description: </strong>This course focuses on leadership development and gender diversity in the workplace.</p>
+            <p><strong>Link:</strong> FutureLearn - Women in Leadership</p>
+            <p><strong>get detailed information about the specific courses and resources available on the website, you should 
+                visit the URL you provided:<a href= "https://www.futurelearn.com/courses/women-in-leadership">https://www.futurelearn.com/courses/women-in-leadership</a> There, you can explore the content and offerings in more detail.</p></p></strong>
+            <p><strong>To start a course click here &#128071; to explore more courses</strong></p>
+            <a href="https://www.futurelearn.com/courses/women-in-leadership">Learn More</a>
+        <!-- Add more courses as needed -->
+    </ul>
+    </div>
+
+    <div>
+    <ul>
+            <h1>Course 2:</h1>
+            <h2>Women's Leadership Development</h2>
+            <p>Enhance your leadership skills and break through the glass ceiling with this course.</p>
+            <h4>TOPIC-1:</h4>    
+            <strong>Course:</strong> "Women in Leadership: Inspiring Positive Change"
+            <p><strong>Provider:</strong> Case Western Reserve University</p>
+            <p><strong>Description:</strong> This course explores the experiences of women leaders in various 
+                industries and provides strategies for personal and professional growth.</p>
+            <p><strong>Link:</strong> Coursera - Women in Leadership</p>
+            <p><strong>get detailed information about the specific courses and resources available on the website, you should 
+                visit the URL you provided:<a href= "https://www.coursera.org/learn/women-in-leadership">https://www.coursera.org/learn/women-in-leadership</a> There, you can explore the content and offerings in more detail.</p></p></strong>
+            <p><strong>To start a course click here &#128071; to explore more courses</strong></p>
+            <a href="https://www.coursera.org/learn/women-in-leadership">Learn More</a>
+    </ul>
+    </div>
+
+    <div>
+    <ul>
+            <h1>Course 3:</h1>
+            <h2>Online courses from the World's Best Institutes</h2>
+            <p>"Glow and Lovely Careers" is a platform that offers online courses and resources aimed at personal 
+                and professional development, particularly for individuals looking to enhance their skills and 
+                career prospects. The website is likely associated with the "Glow & Lovely" brand, which was formerly
+                 known as "Fair & Lovely" and is known for its beauty and skincare products. It appears that "Glow and 
+                 Lovely Careers" focuses on education and career-related content, potentially offering courses or guidance 
+                 related to various fields and industries.
+
+                <p><strong>get detailed information about the specific courses and resources available on the website, you should 
+                visit the URL you provided:<a href= "https://www.glowandlovelycareers.in/en/online-courses">https://www.glowandlovelycareers.in/en/online-courses</a> There, you can explore the content and offerings in more detail.</p></p></strong>
+                <p><strong>To start a course click here &#128071; to explore more courses</strong></p>
+                <a href="https://www.glowandlovelycareers.in/en/online-courses">Learn More</a>
+    </ul>
+    </div>
+    <div>
+        <ul>
+                <h1>Course 4:</h1>
+                <h2>Best FREE Online Courses with Certificates (2023)</h2>
+                <p><strong>Google IT Automation with Python Professional Certificate (Coursera)</strong>
+                    <strong>Specs: Rating:</strong> 4.7 | <strong>Duration:</strong> Approx. 8 months to complete | <strong>Fee:</strong> Free | <strong>Certificate:</strong> Yes | <strong>Level: Beginner</strong></p>
+                    <p><a href= "https://www.coursera.org/professional-certificates/google-it-automation?irclickid=y2%3AU2t1kbxyPTMQ13uS1TyxcUkFUZ5Sl%3AWUEyc0&irgwc=1">Google IT Automation with Python Professional</a> is a bundle of six-course certificates developed by Google to provide IT professionals with in-demand IT skills, like Python, Git, and IT automation.
+
+                        This course program builds, which helps you to take your career to the next level. This learning material designed in such a way that teaches you how you can program with Python and how you can use Python to automate frequently use system administration tasks.
+                        
+                        In this course, you will also learn to use Git and GitHub, troubleshoot and debug complicated problems, and apply automation by using configuration management and the Cloud.
+                        
+                        This certificate can be completed in about six months and is designed to prepare you for various roles in IT, like more advanced IT Support Specialist or Junior Systems Administrator positions.</p>
+                        <h2 align="left"><strong>Key topics:</strong><br></h2>
+                        <p align="left">&#8226;Learn how you can automate tasks with the help of Python scripts.<br></p>
+                        <p align="left">&#8226;How you can use Git and GitHub for version control.<br></p>
+                        <p align="left">&#8226;Learn how you can manage IT resources, physical machines, and virtual machines in the cloud.<br></p>
+                        <p align="left">&#8226;Helps you to analyze real-world IT problems and implement the appropriate strategies to solve those problems.</p>
+
+                        <h2 align="left"><strong>Features:</strong></h2>
+                        <p align="left">&#8226;100% online courses</p>
+                            <p align="left">&#8226;Flexible schedule</p>
+                                <p align="left">&#8226;Self-paced learning option</p>
+                                    <p align="left">&#8226; Videos & readings materials</p>
+                                        <p align="left">&#8226; Practice quizzes</p>
+                                            <p align="left">&#8226; Programming assignments with feedback</p>
+                                                <p align="left">&#8226; Graded quizzes with feedback</p>
+                                                    <p align="left">&#8226; Language: English, French, PortugueseRussian, Spanish, etc.</p>
+
+                            <h3 style="text-align: center;">
+                                <a target="_blank" href="https://imp.i384100.net/x9vNNy" rel="sponsored noopener" data-lasso-id="184252" class="toolbutton">Enroll Now &gt;&gt;</a></h3>
+        </ul>
+</div>

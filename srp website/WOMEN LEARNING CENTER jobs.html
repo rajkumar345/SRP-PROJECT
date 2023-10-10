@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WOMEN LEARNING CENTER</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Navbar */
+        #Navbar {
+            display: flex;
+            background-color: teal;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+        }
+
+        #logo {
+            font-size: 24px;
+            color: white;
+        }
+
+        #list {
+            display: flex;
+            font-size: 18px;
+            color: white;
+        }
+
+        #list a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+        }
+
+        /* Container */
+        .container {
+            flex: 1;
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container h1 {
+            color: rgb(139, 23, 0);
+            font-family: Elephant, sans-serif;
+            font-size: 36px;
+        }
+
+        .container p {
+            color: #333;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            line-height: 1.5;
+            margin-top: 20px;
+        }
+
+        /* Jobs Section Styles */
+        .jobs-section {
+            margin-top: 40px;
+        }
+
+        .jobs-section h2 {
+            color: rgb(233, 9, 125);
+            font-family: Bahnschrift SemiBold SemiConden;
+            font-size: 24px;
+        }
+
+        .jobs-section p {
+            color: #333;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            line-height: 1.5;
+            margin-top: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: teal;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="Navbar">
+        <div id="logo">WOMEN LEARNING CENTER</div>
+        <div id="list">
+            <a href="WOMEN LEARNING CENTER home.html">Home</a>
+            <a href="WOMEN LEARNING CENTER career guidance.html">Career Guidance</a>
+            <a href="WOMEN LEARNING CENTER jobs.html">Jobs</a>
+            <a href="WOMEN LEARNING CENTER books.html">Books</a>
+            <a href="WOMEN LEARNING CENTER video lectures.html">Video Lectures</a>
+            <a href="WOMEN LEARNING CENTER online courses.html">Online Courses</a>
+            <a href="WOMEN LEARNING CENTER about us.html">About Us</a>
+            <a href="WOMEN LEARNING CENTER contact us.html">Contact Us</a>
+        </div>
+    </div>
+    <div class="container">
+        <!-- Replace this image URL with your project's image -->
+        <img src="data:image/jpeg;base64,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" 
+        alt="Project Image" width="50%" height="50%">
+        <h1>Welcome to WOMEN LEARNING CENTER!</h1>
+
+        <!-- Jobs Section -->
+            <strong>
+            <h2>Jobs</h2>
+            <p style="color:rgb(173, 36, 204);font-family:Bahnschrift SemiBold SemiConden;">
+                Explore job opportunities for women in various fields. We provide job listings, career resources, and support to help you find your dream job or advance in your career.
+            </p>
+        </strong>
+            <!-- Add more content related to jobs here -->
+            <p style="color:rgb(78, 7, 221);font-family:Bahnschrift SemiBold SemiConden;">
+                <strong>Exploration:</strong> Visitors are encouraged to explore job opportunities for women in various fields. 
+                This indicates that the Women Learning Center is actively involved in helping women find suitable employment.
+            </p>
+            
+            <p style="color:rgba(45, 225, 105, 0.925);font-family:Bahnschrift SemiBold SemiConden;">
+                <strong>Services Offered:</strong> The center provides job listings, career resources, and support. 
+                This suggests that the website offers practical tools and guidance to assist women in their job search and career advancement.
+            </p>
+            
+            <p style="color:rgb(228, 50, 207);font-family:Bahnschrift SemiBold SemiConden;">
+                <strong>Empowerment:</strong> The mention of "finding your dream job or advancing in your career" underscores 
+                the center's commitment to empowering women in their professional lives.
+            </p>
+            
+            <p style="color:rgb(206, 213, 3);font-family:Bahnschrift SemiBold SemiConden;">
+                <strong>Placeholder for Additional Content:</strong> The section is designed as a starting point, leaving room 
+                for you to expand and add more specific information and resources related to job opportunities for women. You can include 
+                job listings, links to job search websites, career advice articles, success stories, and any other content that will be valuable 
+                to your website visitors.
+            </p>
+            <strong>
+            <p style="color:rgb(245, 39, 39);font-family:Bahnschrift SemiBold SemiConden;">
+                Overall, the "Jobs" section aims to provide women with valuable resources and support to help them succeed in their careers, 
+                whether they are searching for a new job or seeking to advance in their current career paths.
+            </p></strong>
+        </div>
+    </div>
+    <footer>&copy; 2023 WOMEN LEARNING CENTER</footer>
+</body>
+</html>
